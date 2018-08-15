@@ -43,4 +43,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, Mylistener())
-twitterStream.filter(track=["protest"])
+twitterStream.filter(track=["protest", "attack", "police"], languages=["en"])
