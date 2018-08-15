@@ -24,14 +24,14 @@ class Mylistener (StreamListener):
         print(tweets, sentiment_value, confidence)
         
         if confidence*100 >= 80:
-            output = open("python1.json","a")
-            output.write(tweets)
-            output.close()
+            output1 = open("python1.json","a")
+            output1.write(tweets)
+            output1.close()
 
 
-#            output = open("twitter-out.txt","a")
-#            output.write(sentiment_value)
-#            output.close()            
+            output = open("twitter-out.txt","a")
+            output.write(sentiment_value)
+            output.close()            
             
             
         return True
